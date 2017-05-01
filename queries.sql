@@ -11,7 +11,7 @@ ON f.id = t.film_id
 ;
 
 
-SELECT f.*, t.* c.* FROM films c
+SELECT f.*, t.*, c.* FROM films f
 INNER JOIN tickets t
 ON t.film_id = f.id
 INNER JOIN customers c

@@ -33,6 +33,11 @@ class Film
     sql = "SELECT * FROM films"
     films = SqlRunner.run (sql)
     result = films.map {|film| Film.new(film)}
+    # result = []
+    # for film in films
+    #   new_film = Film.new(film)
+    #   result << new_film
+    # end
     return result 
   end
 
